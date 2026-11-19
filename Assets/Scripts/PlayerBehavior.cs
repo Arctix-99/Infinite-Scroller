@@ -118,5 +118,10 @@ public class PlayerBehavior : MonoBehaviour
     {
         m_coinAmt++;
     }
-    
+
+
+    public void PatsFunction()
+    {
+        // Hi J-P! 
+    }
 }
