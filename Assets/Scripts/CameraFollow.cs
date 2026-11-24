@@ -6,6 +6,6 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Vector3 m_offSet;
     void Update()
     {
-        transform.position = new Vector3(m_playerToFollow.position.x, m_playerToFollow.position.y, m_playerToFollow.position.z) + m_offSet;
+        transform.position = new Vector3(m_playerToFollow.position.x, 0, 0) + m_offSet;
     }
 }

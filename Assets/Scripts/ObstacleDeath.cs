@@ -1,22 +1,30 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObstacleDeath : MonoBehaviour
 {
-    void Start()
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        PlayerBehavior player = collision.GetComponent<PlayerBehavior>();
+       
     }
-
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision != null)
+        PlayerBehavior player = collision.gameObject.GetComponent<PlayerBehavior>();
+        if (player != null)
         {
-            Destroy(collision.gameObject);
+            player.OnDeath();
+
         }
     }
 }
+
+//{
+//    Destroy(collision.gameObject);
+//    SceneManager.LoadScene("DeathScene");
+
+//}
+
+
+
+

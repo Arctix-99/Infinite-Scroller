@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.28532425, y: 1.5227486, z: 0}
-  m_LocalScale: {x: 0.6593681, y: 4.539925, z: 4.829871}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c83231ab585dff841a6a27c25b21bd62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinCollect
-  m_coinValue: 1
 --- !u!212 &4014344984390750536
 SpriteRenderer:
   serializedVersion: 2
@@ -95,7 +94,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 403084015249902486, guid: 911f62cc913eefc4898c47bb0da09f5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
